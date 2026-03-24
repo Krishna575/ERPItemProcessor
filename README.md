@@ -58,16 +58,6 @@ The application uses a **self-referencing table** where:
    - `/Items/Tree` → View hierarchy  
 
 ---
-
-## 🗄️ Database Script
-
-```sql
-CREATE TABLE Items (
-    Id INT PRIMARY KEY IDENTITY(1,1),
-    Name NVARCHAR(100) NOT NULL,
-    Weight FLOAT NOT NULL,
-    ParentId INT NULL
-);
 ## 📸 Screenshots
 
 ### Items Page
@@ -78,3 +68,13 @@ CREATE TABLE Items (
 
 ### Tree View
 ![Tree](images/Tree.png)
+
+## 🗄️ Database Script
+
+```sql
+CREATE TABLE Items (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Name NVARCHAR(100) NOT NULL,
+    Weight FLOAT NOT NULL,
+    ParentId INT NULL
+);
