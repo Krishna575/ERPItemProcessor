@@ -68,3 +68,13 @@ CREATE TABLE Items (
     Weight FLOAT NOT NULL,
     ParentId INT NULL
 );
+## 📸 Screenshots
+
+### Items Page
+![Items](images/Items.png)
+
+### Process Page
+![Process](images/Process.png)
+
+### Tree View
+![Tree](images/Tree.png)
