@@ -1,0 +1,31 @@
+﻿@model List<ERPItemProcessor.Models.Item>
+
+<h2>Item Tree</h2>
+
+<ul>
+    @foreach (var item in Model.Where(i => i.ParentId == null))
+    {
+        <li>
+            @item.Name
+            @RenderChildren(item.Id, Model)
+        </li>
+    }
+</ul>
+
+@helper RenderChildren(int parentId, List<ERPItemProcessor.Models.Item> items)
+{
+    var children = items.Where(i => i.ParentId == parentId).ToList();
+
+    if (children.Any())
+    {
+        <ul>
+            @foreach (var child in children)
+            {
+                <li>
+                    @child.Name
+                    @RenderChildren(child.Id, items)
+                </li>
+            }
+        </ul>
+    }
+}

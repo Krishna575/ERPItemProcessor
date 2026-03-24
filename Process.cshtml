@@ -1,0 +1,27 @@
+﻿<h2>Process Item</h2>
+
+<form method="post" action="/Items/Process">
+
+    <label>Select Parent Item:</label>
+    <select name="parentId">
+        @foreach (var item in ViewBag.Items)
+        {
+            <option value="@item.Id">@item.Name</option>
+        }
+    </select>
+
+    <br /><br />
+
+    <label>Child Item Name:</label>
+    <input type="text" name="childName" />
+
+    <br /><br />
+
+    <label>Child Weight:</label>
+    <input type="number" name="childWeight" />
+
+    <br /><br />
+
+    <button type="submit">Add Child</button>
+
+</form>
