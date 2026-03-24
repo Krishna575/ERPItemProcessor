@@ -39,11 +39,16 @@ The application uses a **self-referencing table** where:
 
 ---
 
-## 📸 Application Flow
+## 📸 Screenshots
 
-1. ➕ Add Items  
-2. 🔄 Process Items (create child items)  
-3. 🌳 View Hierarchy (Tree Structure)  
+### Items Page
+![Items](Items.png)
+
+### Process Page
+![Process](Process.png)
+
+### Tree View
+![Tree](Tree.png)
 
 ---
 
@@ -58,16 +63,6 @@ The application uses a **self-referencing table** where:
    - `/Items/Tree` → View hierarchy  
 
 ---
-## 📸 Screenshots
-
-### Items Page
-![Items](images/Items.png)
-
-### Process Page
-![Process](images/Process.png)
-
-### Tree View
-![Tree](images/Tree.png)
 
 ## 🗄️ Database Script
 
